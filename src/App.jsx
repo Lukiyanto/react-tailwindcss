@@ -1,13 +1,21 @@
-import React from 'react'
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
+import HomePage from "./pages/HomePage";
 
 export const App = () => {
   return (
     <div>
-      <h1 class="text-3xl text-red-600 font-bold underline">
-        Hello world!
-      </h1>
+      {/* Navbar */}
+      <Navbar />
+
+      {/* Content */}
+      <HomePage />
+
+      {/* Footer */}
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
 export default App;
